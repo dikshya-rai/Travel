@@ -1,0 +1,22 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+#parent{
+    display:grid;
+    grid-template-columns:minmax(200px,400px) 1fr
+    grid-template-rows: 100px 15px;
+    gap: 20px;
+}
+.child{
+    background:red ;
+    color:white;
+}
+.child:nth-child(2){
+    background: green;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
